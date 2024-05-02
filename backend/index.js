@@ -111,7 +111,7 @@ app.post('/signup', async (req, res) => {
 })
 
 app.get('/logout', (req, res) => {
-  res.clearCookie('username')
+  res.clearCookie('username') // deletes the username cookie from the user browser
   res.json({
     username: '',
     loggedIn: false
